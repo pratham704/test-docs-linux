@@ -6,7 +6,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage"; // Import 
 import { TouchableOpacity } from "react-native";
 
 // Import your components
-// import Documents from "../Documents/Documents"; 
+import Documents from "../Documents/Documents"; 
 import Profile from "../Profile/Profile";
 // import AddDocument from "../Documents/AddDocument";
 
@@ -18,11 +18,8 @@ const MainNavigator = () => {
   const navigation = useNavigation();
 
   const LogoutButton = async() => {
-
     await AsyncStorage.removeItem("access_token"); // Remove the access token
     navigation.navigate("Start"); // Navigate back to the Welcome page
-
-
 };
 
   return (
@@ -62,12 +59,12 @@ const MainNavigator = () => {
         },
       })}
     >
-      {/* <Tab.Screen
+      <Tab.Screen
         name="MyDocuments"
         children={() => <Documents tabType="myDocuments" />} // Pass prop to differentiate
         options={{ tabBarLabel: "Docs" }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="AddDocument"
         children={() => <AddDocument tabType="addDocument" />} // Pass prop to differentiate
         options={{ tabBarLabel: "Add" }}
