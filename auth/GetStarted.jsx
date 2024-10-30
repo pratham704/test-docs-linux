@@ -40,7 +40,7 @@ const GetStarted = () => {
       </Text>
 
       <TouchableOpacity style={styles.button} 
-      // onPress={() => nav.navigate("Login")}
+      onPress={() => nav.navigate("Login")}
       >
         <Text style={styles.buttonText}>Get Started</Text>
       </TouchableOpacity>
