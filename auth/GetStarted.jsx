@@ -6,9 +6,9 @@ import {
   TouchableOpacity,
   ScrollView,
 } from "react-native";
-// import LottieView from "lottie-react-native";
+import LottieView from "lottie-react-native";
 import { useNavigation } from "@react-navigation/native";
-// import Icon from "react-native-vector-icons/MaterialIcons"; // Importing MaterialIcons
+import Icon from "react-native-vector-icons/MaterialIcons"; // Importing MaterialIcons
 import AsyncStorage from "@react-native-async-storage/async-storage"; // Import AsyncStorage
 
 const GetStarted = () => {
@@ -50,15 +50,15 @@ const GetStarted = () => {
         <Text style={styles.featuresTitle}>Features:</Text>
 
         <View style={styles.featureItem}>
-          {/* <Icon name="access-time" size={20} color="#ff6347" /> */}
+          <Icon name="access-time" size={20} color="#ff6347" />
           <Text style={styles.featureText}>Easy Access Anytime</Text>
         </View>
         <View style={styles.featureItem}>
-          {/* <Icon name="folder" size={20} color="#ff6347" /> */}
+          <Icon name="folder" size={20} color="#ff6347" />
           <Text style={styles.featureText}>Organized File Management</Text>
         </View>
         <View style={styles.featureItem}>
-          {/* <Icon name="backup" size={20} color="#ff6347" /> */}
+          <Icon name="backup" size={20} color="#ff6347" />
           <Text style={styles.featureText}>Automatic Backups</Text>
         </View>
       </View>
