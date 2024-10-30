@@ -22,8 +22,9 @@
       "package": "com.pratham1718.SafeImage"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    },
+      "output": "server",
+      "bundler": "metro"
+    } , 
     "extra": {
       "eas": {
         "projectId": "52307c16-c458-4e65-8535-514522f43e25"
