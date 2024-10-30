@@ -11,7 +11,7 @@ const Routers = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="start">
         <Stack.Screen
-          name="gettingstarted"
+          name="start"
           component={GetStarted}
           options={{ headerShown: false }}
         />
