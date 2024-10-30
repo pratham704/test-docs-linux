@@ -4,7 +4,7 @@ import { Camera, CameraType } from 'expo-camera/legacy';
 import * as ImagePicker from 'expo-image-picker';
 import axios from 'axios';
 import { MaterialIcons } from '@expo/vector-icons';
-import { uploadImageToServer } from '../../../utils/helper/uploadImage';
+import { uploadImageToServer } from '../utils/helper/uploadImage';
 import AddToFolder from './AddToFolder'; // Import new component
 import { useNavigation  , useFocusEffect} from "@react-navigation/native";
 

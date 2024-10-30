@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { baseUrl } from '../../src/app/api/BaseUrl';
+import { baseUrl } from '../../api/BaseUrl';
 
 import AsyncStorage from "@react-native-async-storage/async-storage"; // Import AsyncStorage
 
