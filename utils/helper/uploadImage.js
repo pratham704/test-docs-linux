@@ -14,7 +14,7 @@ export const uploadImageToServer = async (imageUri) => {
   formData.append('image', {
     uri: imageUri,
     type: 'image/jpeg', // Assuming jpeg for simplicity
-    name: `SafeDocs_${Date.now().toString()}.jpg`,
+    name: `SafeImage_${Date.now().toString()}.jpg`,
   });
   formData.append('type', 'file');
   formData.append('action', 'upload');

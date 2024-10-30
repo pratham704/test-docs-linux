@@ -29,12 +29,12 @@ const GetStarted = () => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <LottieView
-        source={require("../../../assets/animation.json")} // Adjust the path as necessary
+        source={require("../assets/animation.json")} // Adjust the path as necessary
         autoPlay
         loop
         style={styles.image}
       />
-      <Text style={styles.title}>Welcome to SafeDocs</Text>
+      <Text style={styles.title}>Welcome to SafeImage</Text>
       <Text style={styles.description}>
         Upload your documents securely and access them anytime, anywhere. Keep
         your important files safe and organized with our easy-to-use interface.
