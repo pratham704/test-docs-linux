@@ -19,14 +19,14 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.pratham704.app"
+      "package": "com.pratham1718.SafeImage"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "849ce23f-36e5-492a-a024-7762a41958bc"
+        "projectId": "52307c16-c458-4e65-8535-514522f43e25"
       }
     }
   }
