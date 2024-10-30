@@ -6,9 +6,9 @@ import AsyncStorage from "@react-native-async-storage/async-storage"; // Import 
 import { TouchableOpacity } from "react-native";
 
 // Import your components
-import Documents from "../Documents/Documents"; 
+// import Documents from "../Documents/Documents"; 
 import Profile from "../Profile/Profile";
-import AddDocument from "../Documents/AddDocument";
+// import AddDocument from "../Documents/AddDocument";
 
 const Tab = createBottomTabNavigator();
 
@@ -62,7 +62,7 @@ const MainNavigator = () => {
         },
       })}
     >
-      <Tab.Screen
+      {/* <Tab.Screen
         name="MyDocuments"
         children={() => <Documents tabType="myDocuments" />} // Pass prop to differentiate
         options={{ tabBarLabel: "Docs" }}
@@ -71,7 +71,7 @@ const MainNavigator = () => {
         name="AddDocument"
         children={() => <AddDocument tabType="addDocument" />} // Pass prop to differentiate
         options={{ tabBarLabel: "Add" }}
-      />
+      /> */}
       <Tab.Screen
         name="Profile"
         children={() => <Profile tabType="profile" />} // Pass prop to differentiate

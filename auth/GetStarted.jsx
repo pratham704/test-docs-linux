@@ -9,21 +9,22 @@ import {
 // import LottieView from "lottie-react-native";
 import { useNavigation } from "@react-navigation/native";
 // import Icon from "react-native-vector-icons/MaterialIcons"; // Importing MaterialIcons
-// import AsyncStorage from "@react-native-async-storage/async-storage"; // Import AsyncStorage
+import AsyncStorage from "@react-native-async-storage/async-storage"; // Import AsyncStorage
 
 const GetStarted = () => {
   const nav = useNavigation();
 
-  // useEffect(() => {
-  //   const checkToken = async () => {
-  //     const token = await AsyncStorage.getItem("access_token");
-  //     if (token) {
-  //       nav.navigate("Main"); // Navigate to Main if token exists
-  //     }
-  //   };
+  useEffect(() => {
+    const checkToken = async () => {
+      const token = await AsyncStorage.getItem("access_token");
+      if (token) {
+        nav.navigate("Main"); // Navigate to Main if token exists
+        console.log("minhbedwehb")
+      }
+    };
 
-  //   checkToken();
-  // }, [nav]); // Add nav to the dependency array
+    checkToken();
+  }, []); // Add nav to the dependency array
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
